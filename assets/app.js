@@ -1,18 +1,20 @@
-/* HOLOD26 — общий скрипт сайта */
+/* Вывоз мусора Алматы — общий скрипт сайта */
 (function () {
   'use strict';
 
   /* ---------- конверсии Google Ads: отдельный ярлык на каждый канал ---------- */
   var ADS_ID = 'AW-XXXXXXXXXX';
   var LABELS = {
-    whatsapp: 'WHATSAPP_LABEL',
     call: 'CALL_LABEL',
-    telegram: 'TELEGRAM_LABEL'
+    whatsapp: 'WHATSAPP_LABEL'
   };
+  /* события для Google Аналитики (GA4) */
+  var GA_EVENTS = { call: 'click_call', whatsapp: 'click_whatsapp' };
   window.hcConv = function (kind) {
     try {
-      if (typeof window.gtag === 'function' && LABELS[kind]) {
-        window.gtag('event', 'conversion', { send_to: ADS_ID + '/' + LABELS[kind] });
+      if (typeof window.gtag === 'function') {
+        if (LABELS[kind]) window.gtag('event', 'conversion', { send_to: ADS_ID + '/' + LABELS[kind] });
+        if (GA_EVENTS[kind]) window.gtag('event', GA_EVENTS[kind], { link_page: location.pathname });
       }
     } catch (e) {}
     return true; /* переход по ссылке не перехватываем */
