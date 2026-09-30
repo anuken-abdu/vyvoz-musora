@@ -284,3 +284,7 @@ p{margin:0;text-wrap:pretty}
   *,*::before,*::after{animation:none!important;transition:none!important}
 }
 .hero-svc h1{font-size:clamp(1.85rem,5.2vw,3.3rem)}
+.van-box{display:flex;align-items:center;gap:16px;max-width:460px}
+.van-box p{color:#BFD8D2}
+.van-big{width:120px;height:70px;flex-shrink:0;background:var(--paper);border:2px solid var(--ink);border-radius:16px;padding:6px;box-shadow:4px 4px 0 #061917}
+@media(max-width:480px){.van-box{flex-direction:column;align-items:flex-start}}

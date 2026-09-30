@@ -5,8 +5,8 @@
 Скрипт обрежет фото, ужмёт по весу и сделает .webp.
 
 Фото первого экрана (в рамке справа), 1600x900, до 150 КБ:
-  hero-1.jpg  главная — машина с мусором или погрузка
-  hero-2.jpg  строительный мусор, контейнер, снег
+  hero-1.jpg  главная — Газель и грузчики за погрузкой
+  hero-2.jpg  строительный мусор
   hero-3.jpg  мебель, грузчики, демонтаж
   hero-4.jpg  хлам, ветки
   Рамка обрезает фото примерно до 4:3 — главное держите в центре кадра.
@@ -15,9 +15,9 @@
   portfolio/01-stroitelnyj-musor.jpg     Мусор после ремонта
   portfolio/02-vyvoz-mebeli.jpg          Старая мебель
   portfolio/03-rasschistka-garazha.jpg   Гараж и подвал
-  portfolio/04-kontejner.jpg             Контейнер на объекте
+  portfolio/04-balkon.jpg                Балкон и кладовка
   portfolio/05-vetki.jpg                 Ветки после спила
-  portfolio/06-vyvoz-snega.jpg           Снег со двора
+  portfolio/06-gazel.jpg                 Полная Газель
 
 Служебные:
   og-banner.jpg 1200x630, до 120 КБ — превью ссылки в WhatsApp/Telegram (уже готов)
