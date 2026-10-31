@@ -5,7 +5,7 @@
   /* ---------- конверсии Google Ads: отдельный ярлык на каждый канал ---------- */
   var ADS_ID = 'AW-18490521260';
   var LABELS = {
-    call: 'KqnpCK6mnakdEKzt-_BE',
+    call: '7D94CL7sq68dEKzt-_BE',   /* «Интерактивные номера телефонов (1)» */
     whatsapp: 'WHATSAPP_LABEL'
   };
   /* события для Google Аналитики (GA4) */
@@ -13,7 +13,7 @@
   window.hcConv = function (kind) {
     try {
       if (typeof window.gtag === 'function') {
-        if (LABELS[kind] && !/_LABEL$/.test(LABELS[kind])) window.gtag('event', 'conversion', { send_to: ADS_ID + '/' + LABELS[kind] });
+        if (LABELS[kind] && !/_LABEL$/.test(LABELS[kind])) window.gtag('event', 'conversion', { send_to: ADS_ID + '/' + LABELS[kind], value: 1.0, currency: 'USD', transport_type: 'beacon' });
         if (GA_EVENTS[kind]) window.gtag('event', GA_EVENTS[kind], { link_page: location.pathname });
       }
     } catch (e) {}
